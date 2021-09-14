@@ -113,17 +113,17 @@
 
             <li class="skills__item">
               html
-              <span class="skills__progress" style="width:90%;"></span>
+              <span class="skills__progress" style="width:90%;">90%</span>
             </li>
 
             <li class="skills__item">
               css
-              <span class="skills__progress" style="width:70%;"></span>
+              <span class="skills__progress" style="width:70%;">70%</span>
             </li>
 
             <li class="skills__item">
               js
-              <span class="skills__progress" style="width:60%;"></span>
+              <span class="skills__progress " style="width:60%;">60%</span>
             </li>
 
           </ul>
@@ -198,27 +198,27 @@
         <div class="works__inner">
 
           <div class="works__box">
-            <img class="works__image" src="img/picworks/river-city.jpg" alt="город на реке">
+            <img class="works__image" src="img/picworks/river-city.jpg" alt="город на реке"width="360" height="360">
           </div>
 
           <div class="works__box">
-            <img class="works__image" src="img/picworks/bridge-bot.jpg" alt="лодки под мостом">
+            <img class="works__image" src="img/picworks/bridge-bot.jpg" alt="лодки под мостом"width="360" height="360">
           </div>
 
           <div class="works__box">
-            <img class="works__image" src="img/picworks/bridge-train.jpg" alt="поезд на мосту">
+            <img class="works__image" src="img/picworks/bridge-train.jpg" alt="поезд на мосту"width="360" height="360">
           </div>
 
           <div class="works__box">
-            <img class="works__image" src="img/picworks/sunrise-city.jpg" alt="восход солнца">
+            <img class="works__image" src="img/picworks/sunrise-city.jpg" alt="восход солнца"width="360" height="360">
           </div>
 
           <div class="works__box">
-            <img class="works__image" src="img/picworks/river.jpg" alt="река">
+            <img class="works__image" src="img/picworks/river.jpg" alt="река"width="360" height="360">
           </div>
 
           <div class="works__box">
-            <img class="works__image" src="img/picworks/rock.jpg" alt="скала в море">
+            <img class="works__image" src="img/picworks/rock.jpg" alt="скала в море"width="360" height="360">
           </div>
         </div>
 
@@ -235,14 +235,16 @@
         <div class="client__inner">
 
           <blockquote class="client__blockquote">
-            <img class="client__image" src="img/zukerberg.jpg" alt="марк цукерберг">
+            <img class="client__image" src="img/zukerberg.jpg" alt="марк цукерберг" width="130" height="130">
             <cite class="client__author">Марк Цукерберг</cite>
             Фантастика! Я всецело доволен
             работой этого специалиста.
             Быстро и качественно. Рекомендую!
           </blockquote>
 
-          <a class="client__link" href="#" style="background-image: url(img/video-fb.jpg);"></a>
+          <a class="client__link" href="#" style="background-image: url(img/video-fb.jpg);">
+            <span class="sr-only">видео с ютуба</span>
+            </a>
 
         </div>
 
@@ -313,34 +315,42 @@
 
             <ul class="contact__list contact__list--social">
 
-              <li class="contact__icon contact__icon--inst">
-                <a class="contact__link" href="#">instagram</a>
+              <li class="contact__item contact__item--social">
+                <a class="contact__icon contact__icon--inst" href="#">
+                  <span class="sr-only">instagram</span>
+                </a>
               </li>
 
-              <li class="contact__icon contact__icon--face">
-                <a class="contact__link" href="#">facebook</a>
+              <li class="contact__item contact__item--social">
+                <a class="contact__icon contact__icon--face" href="#">
+                  <span class="sr-only">facebook</span>
+                </a>
               </li>
 
-                <li class="contact__icon contact__icon--telgr">
-                  <a class="contact__link" href="#">telegram</a>
-                </li>
+              <li class="contact__item contact__item--social">
+                <a class="contact__icon contact__icon--telgr" href="#">
+                  <span class="sr-only">telegram</span>
+                </a>
+              </li>
             </ul>
 
           </address>
 
           <form class="form" action="#">
 
-            <label class="form__title">
-              Ваше имя
-              <input class="form__area" type="text" name="Имя" required placeholder="Иван">
-            </label>
-            
-            <label class="form__title">
-              Номер телефона
-              <input class="form__area" type="tel" name="Телефон" required placeholder="+380501111111">
-            </label>
+            <div class="form__inner">
 
-            <label class="form__title">
+              <label class="form__title">
+                Ваше имя
+                <input class="form__area" type="text" name="Имя" required placeholder="Иван">
+              </label>
+
+              <label class="form__title">
+                Номер телефона
+                <input class="form__area" type="tel" name="Телефон" required placeholder="+380501111111">
+              </label>
+            </div>
+            <label class="form__message">
               Ваше сообщение
               <textarea class="form__text" name="Сообщение" required placeholder="Текст вашего сообщения"></textarea>
             </label>
